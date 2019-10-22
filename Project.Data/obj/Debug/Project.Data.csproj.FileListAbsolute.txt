@@ -1,0 +1,15 @@
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\obj\Debug\Project.Data.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\Project.Data.dll.config
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\Project.Data.dll
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\Project.Data.pdb
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\EntityFramework.dll
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\EntityFramework.xml
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\obj\Debug\Project.Data.csproj.CopyComplete
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\obj\Debug\Project.Data.dll
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\obj\Debug\Project.Data.pdb

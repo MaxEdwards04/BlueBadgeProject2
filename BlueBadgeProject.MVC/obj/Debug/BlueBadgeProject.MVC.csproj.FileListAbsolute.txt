@@ -1,0 +1,1 @@
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\BlueBadgeProject.MVC\obj\Debug\BlueBadgeProject.MVC.csprojAssemblyReference.cache
