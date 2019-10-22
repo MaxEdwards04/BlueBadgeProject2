@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="GunCreate.cs" />
     <Compile Include="GunDetail.cs" />
+    <Compile Include="GunEdit.cs" />
     <Compile Include="GunListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

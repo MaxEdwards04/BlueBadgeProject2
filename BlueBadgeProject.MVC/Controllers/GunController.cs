@@ -56,6 +56,21 @@ namespace BlueBadgeProject.MVC.Controllers
             return View(model);
         }
 
+        public ActionResult Edit(int id)
+        {
+            var service = CreateGunService();
+            var detail = service.GetGunById(id);
+            var model =
+                new GunEdit
+                {
+                    GunId = detail.GunId,
+                    Name = detail.Name,
+                    Description = detail.Description,
+                    IsPrimary = detail.IsPrimary
+                };
+            return View(model);
+        }
+
         private GunService NewMethod()
         {
             GunService service = CreateGunService();

@@ -81,5 +81,23 @@ namespace Project.Services
                     };
             }
         }
+
+        public bool UpdateGun(GunEdit model)
+        {
+            using(var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Guns
+                    .Single(e => e.GunId == model.GunId && e.OwnerId == _userId);
+
+                entity.Name = model.Name;
+                entity.Description = model.Description;
+                entity.IsPrimary = model.IsPrimary;
+                entity.ModifiedUtc = DateTimeOffset.UtcNow;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
     }
 }
