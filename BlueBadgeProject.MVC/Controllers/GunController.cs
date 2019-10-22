@@ -51,7 +51,7 @@ namespace BlueBadgeProject.MVC.Controllers
         public ActionResult Details(int id)
         {
             var svc = CreateGunService();
-            var model = svc.GetGunByID(id);
+            var model = svc.GetGunById(id);
 
             return View(model);
         }
