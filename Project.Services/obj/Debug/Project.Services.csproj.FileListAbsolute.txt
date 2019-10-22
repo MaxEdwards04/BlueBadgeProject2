@@ -13,3 +13,9 @@ C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Proje
 C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\obj\Debug\Project.Services.csproj.CopyComplete
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\bin\Debug\Project.Data.dll
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\bin\Debug\Project.Models.dll
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\bin\Debug\Project.Data.pdb
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\bin\Debug\Project.Data.dll.config
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\bin\Debug\Project.Models.pdb
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Services\bin\Debug\Project.Models.dll.config

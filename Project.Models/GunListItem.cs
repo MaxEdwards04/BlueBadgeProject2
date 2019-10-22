@@ -12,6 +12,7 @@ namespace Project.Models
         public int GunId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        [Display(Name="Is a Primary Weapon")]
         public bool IsPrimary { get; set; }
 
         [Display(Name="CreatedUtc")]
