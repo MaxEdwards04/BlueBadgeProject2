@@ -60,5 +60,26 @@ namespace Project.Services
                 return query.ToArray();
             }
         }
+
+        public GunDetail GetGunById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Guns
+                        .Single(e => e.GunId == id && e.OwnerId == _userId);
+                return
+                    new GunDetail
+                    {
+                        GunId = entity.GunId,
+                        Name = entity.Name,
+                        Description = entity.Description,
+                        IsPrimary = entity.IsPrimary,
+                        CreatedUtc = entity.CreatedUtc,
+                        ModifiedUtc = entity.ModifiedUtc
+                    };
+            }
+        }
     }
 }

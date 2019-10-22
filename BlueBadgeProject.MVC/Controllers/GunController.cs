@@ -48,6 +48,14 @@ namespace BlueBadgeProject.MVC.Controllers
             return View(model);
         }
 
+        public ActionResult Details(int id)
+        {
+            var svc = CreateGunService();
+            var model = svc.GetGunByID(id);
+
+            return View(model);
+        }
+
         private GunService NewMethod()
         {
             GunService service = CreateGunService();
