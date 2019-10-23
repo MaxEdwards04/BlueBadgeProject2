@@ -84,7 +84,7 @@ namespace Project.Services
 
         public bool UpdateGun(GunEdit model)
         {
-            using(var ctx = new ApplicationDbContext())
+            using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
@@ -95,6 +95,21 @@ namespace Project.Services
                 entity.Description = model.Description;
                 entity.IsPrimary = model.IsPrimary;
                 entity.ModifiedUtc = DateTimeOffset.UtcNow;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeleteGun(int gunId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Guns
+                        .Single(e => e.GunId == gunId && e.OwnerId == _userId);
+
+                ctx.Guns.Remove(entity);
 
                 return ctx.SaveChanges() == 1;
             }

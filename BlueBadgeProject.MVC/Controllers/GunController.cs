@@ -25,10 +25,10 @@ namespace BlueBadgeProject.MVC.Controllers
         public ActionResult Create()
         {
             if (!ModelState.IsValid)
-            { 
+            {
 
             }
-                return View();
+            return View();
         }
 
         [HttpPost]
@@ -71,6 +71,53 @@ namespace BlueBadgeProject.MVC.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, GunEdit model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            if (model.GunId != id)
+            {
+                ModelState.AddModelError("", "Id Mismatch");
+                return View(model);
+            }
+
+            var service = CreateGunService();
+
+            if (service.UpdateGun(model))
+            {
+                TempData["SaveResult"] = "Your gun was updated";
+
+                return RedirectToAction("Index");
+            }
+
+            ModelState.AddModelError("", "Your gun could not be updated.");
+            return View(model);
+        }
+
+        [ActionName("Delete")]
+        public ActionResult Delete(int id)
+        {
+            var svc = CreateGunService();
+            var model = svc.GetGunById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePost(int id)
+        {
+            var service = CreateGunService();
+
+            service.DeleteGun(id);
+
+            TempData["SaveResult"] = "Your gun was deleted";
+
+            return RedirectToAction("Index");
+        }
         private GunService NewMethod()
         {
             GunService service = CreateGunService();
