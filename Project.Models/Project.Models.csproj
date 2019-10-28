@@ -54,10 +54,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttachmentCreate.cs" />
+    <Compile Include="AttachmentDetails.cs" />
+    <Compile Include="AttachmentListItem.cs" />
     <Compile Include="GunCreate.cs" />
     <Compile Include="GunDetail.cs" />
     <Compile Include="GunEdit.cs" />
     <Compile Include="GunListItem.cs" />
+    <Compile Include="AttachmentEdit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

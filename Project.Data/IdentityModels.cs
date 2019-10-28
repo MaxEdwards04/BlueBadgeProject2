@@ -34,6 +34,8 @@ namespace BlueBadgeProject.Data
         }
 
         public DbSet<Gun> Guns { get; set; }
+        public DbSet<Attachment> Attachments { get; set; }
+        //public DbSet<Class> Classes { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -9,51 +9,51 @@ using System.Threading.Tasks;
 
 namespace Project.Services
 {
-    public class GunService
+    public class AttachmentService
     {
         private readonly Guid _userId;
 
-        public GunService(Guid userId)
+        public AttachmentService(Guid userId)
         {
             _userId = userId;
         }
 
-        public bool CreateGun(GunCreate model)
+        public bool CreateAttachment(AttachmentCreate model)
         {
             var entity =
-                new Gun()
-                {
-                    OwnerId = _userId,
-                    Name = model.Name,
-                    Description = model.Description,
-                    IsPrimary = model.IsPrimary,
-                    CreatedUtc = DateTimeOffset.Now
-                };
+    new Attachment()
+    {
+        OwnerId = _userId,
+        Name = model.Name,
+        Description = model.Description,
+        IsPrimary = model.IsPrimary,
+        CreatedUtc = DateTimeOffset.Now
+    };
 
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Guns.Add(entity);
+                ctx.Attachments.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
 
-        public IEnumerable<GunListItem> GetAttachment()
+        public IEnumerable<AttachmentListItem> GetAttachments()
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var query =
                     ctx
-                        .Guns
+                        .Attachments
                         .Where(e => e.OwnerId == _userId)
                         .Select(
                             e =>
-                                new GunListItem
+                                new AttachmentListItem
                                 {
-                                    GunId = e.GunId,
+                                    AttachmentId = e.AttachmentId,
                                     Name = e.Name,
                                     Description = e.Description,
                                     IsPrimary = e.IsPrimary,
-                                    CreatedUtc = e.CreatedUtc
+                                    CreatedUtc = DateTimeOffset.Now
                                 }
                         );
 
@@ -61,18 +61,18 @@ namespace Project.Services
             }
         }
 
-        public GunDetail GetGunById(int id)
+        public AttachmentDetail GetAttachmentById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                        .Guns
-                        .Single(e => e.GunId == id && e.OwnerId == _userId);
+                        .Attachments
+                        .Single(e => e.AttachmentId == id && e.OwnerId == _userId);
                 return
-                    new GunDetail
+                    new AttachmentDetail
                     {
-                        GunId = entity.GunId,
+                        AttachmentId = entity.AttachmentId,
                         Name = entity.Name,
                         Description = entity.Description,
                         IsPrimary = entity.IsPrimary,
@@ -82,14 +82,14 @@ namespace Project.Services
             }
         }
 
-        public bool UpdateGun(GunEdit model)
+        public bool UpdateAttachment(AttachmentEdit model)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                    .Guns
-                    .Single(e => e.GunId == model.GunId && e.OwnerId == _userId);
+                        .Attachments
+                        .Single(e => e.AttachmentId == model.AttachmentId && e.OwnerId == _userId);
 
                 entity.Name = model.Name;
                 entity.Description = model.Description;
@@ -100,16 +100,16 @@ namespace Project.Services
             }
         }
 
-        public bool DeleteGun(int gunId)
+        public bool DeleteAttachment(int noteId)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
-                        .Guns
-                        .Single(e => e.GunId == gunId && e.OwnerId == _userId);
+                        .Attachments
+                        .Single(e => e.AttachmentId == noteId && e.OwnerId == _userId);
 
-                ctx.Guns.Remove(entity);
+                ctx.Attachments.Remove(entity);
 
                 return ctx.SaveChanges() == 1;
             }

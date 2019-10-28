@@ -16,3 +16,4 @@ C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Proje
 C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\obj\Debug\Project.Data.Migrations.InitialCreate.resources
 C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\obj\Debug\Project.Data.csproj.GenerateResource.cache
 C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\obj\Debug\Project.Data.Migrations.UpdateDatabase.resources
+C:\ElevenFiftyProjects\DotNetProjects\1_Blue\Projects\BlueBadgeProject.MVC\Project.Data\obj\Debug\Project.Data.Migrations.attachmentcreatefix.resources

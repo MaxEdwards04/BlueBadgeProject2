@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Attachment.cs" />
     <Compile Include="Gun.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Migrations\201910221420352_InitialCreate.cs" />
@@ -63,6 +64,10 @@
     <Compile Include="Migrations\201910221743374_Update-Database.cs" />
     <Compile Include="Migrations\201910221743374_Update-Database.Designer.cs">
       <DependentUpon>201910221743374_Update-Database.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201910241421236_attachmentcreatefix.cs" />
+    <Compile Include="Migrations\201910241421236_attachmentcreatefix.Designer.cs">
+      <DependentUpon>201910241421236_attachmentcreatefix.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +82,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201910221743374_Update-Database.resx">
       <DependentUpon>201910221743374_Update-Database.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910241421236_attachmentcreatefix.resx">
+      <DependentUpon>201910241421236_attachmentcreatefix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
