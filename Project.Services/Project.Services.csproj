@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AttachmentService.cs" />
+    <Compile Include="ClassService.cs" />
     <Compile Include="GunService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

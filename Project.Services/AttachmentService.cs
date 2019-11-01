@@ -100,7 +100,7 @@ namespace Project.Services
             }
         }
 
-        public bool DeleteAttachment(int noteId)
+        public bool DeleteAttachment (int noteId)
         {
             using (var ctx = new ApplicationDbContext())
             {

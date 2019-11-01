@@ -57,6 +57,10 @@
     <Compile Include="AttachmentCreate.cs" />
     <Compile Include="AttachmentDetails.cs" />
     <Compile Include="AttachmentListItem.cs" />
+    <Compile Include="ClassCreate.cs" />
+    <Compile Include="ClassDetail.cs" />
+    <Compile Include="ClassEdit.cs" />
+    <Compile Include="ClassListItem.cs" />
     <Compile Include="GunCreate.cs" />
     <Compile Include="GunDetail.cs" />
     <Compile Include="GunEdit.cs" />
