@@ -22,3 +22,21 @@ select,
 textarea {
     max-width: 280px;
 }
+
+body {
+    background-image: url("../Extra//MW2.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.table {
+    background-color: rgb(8,8,8,0.5);
+    
+}
+
